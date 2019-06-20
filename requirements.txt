@@ -8,7 +8,6 @@ Click==7.0
 colorama==0.4.1
 colorclass==2.2.0
 decorator==4.4.0
-Django==2.1.5
 docutils==0.14
 Flask==1.0.3
 Flask-SQLAlchemy==2.4.0
@@ -31,7 +30,6 @@ oauthlib==3.0.1
 odict==1.6.2
 optional-django==0.1.0
 pandas==0.24.2
-parso==0.4.0
 pdblp==0.1.8
 pickleshare==0.7.5
 Pillow==6.0.0

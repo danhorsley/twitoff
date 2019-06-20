@@ -1,0 +1,8 @@
+name: test_env
+channels:
+  - defaults
+dependencies:
+  - nodejs=10.13.0=0
+  - vs2015_runtime=14.15.26706=h3a45250_4
+prefix: C:\Users\danie\Anaconda3\envs\test_env
+

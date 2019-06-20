@@ -21,7 +21,6 @@ Jinja2==2.10.1
 jupyter-client==5.2.4
 jupyter-core==4.4.0
 kaggle==1.5.3
-lambdatadanh==0.0.15
 MarkupSafe==1.1.1
 node==0.9.23
 npm==0.1.1

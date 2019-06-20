@@ -1,4 +1,5 @@
 """main application and routing logic for twitoff"""
+import os
 from flask import Flask, render_template, request
 from .models import DB, User
 from .twitter import *
@@ -7,7 +8,8 @@ from .twitter import *
 def create_app():
     """Create and configure instance of the Flask application"""
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+    #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('HEROKU_POSTGRESQL_COPPER_URL')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['ENV'] = 'debug'
     DB.init_app(app)

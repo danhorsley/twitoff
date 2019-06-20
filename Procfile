@@ -1,1 +1,1 @@
-web: gunicorn hellodjango.wsgi
+web: gunicorn twitoff:APP -t 120
